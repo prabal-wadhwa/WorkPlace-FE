@@ -1,0 +1,33 @@
+/* ================= GLOBAL THEME ================= */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap");
+
+:root {
+  --bg: #0d0f1a;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-hover: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(167, 139, 250, 0.5);
+
+  --text-primary: #f0f0ff;
+  --text-secondary: rgba(240, 240, 255, 0.6);
+
+  --accent: #a78bfa;
+  --accent-glow: rgba(167, 139, 250, 0.3);
+
+  --danger: #ff4d6d;
+  --success: #2ec4b6;
+
+  --radius: 18px;
+  --radius-sm: 10px;
+
+  --font-display: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: var(--font-body);
+  color: var(--text-primary);
+}

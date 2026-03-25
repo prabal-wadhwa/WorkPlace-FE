@@ -1,0 +1,100 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.modal-box {
+  background: #13152a;
+  border: 1px solid rgba(255, 77, 109, 0.25);
+  border-radius: 24px;
+  padding: 32px;
+  text-align: center;
+  animation: modalPop 0.25s ease;
+}
+
+.modal-icon-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 77, 109, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.modal-icon {
+  color: #ff4d6d;
+  font-size: 22px;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.modal-desc {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
+}
+
+@keyframes modalPop {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.success-modal {
+  border: 1px solid rgba(46, 196, 182, 0.3);
+}
+
+.modal-icon-wrap.success {
+  background: rgba(46, 196, 182, 0.15);
+}
+
+.success-icon {
+  color: var(--success);
+  font-size: 26px;
+}
+
+.success-icon {
+  animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
